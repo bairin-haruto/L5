@@ -25,4 +25,8 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
+  database: render_joac
+  username: render_joac_user
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
   # database: storage/production.sqlite3
