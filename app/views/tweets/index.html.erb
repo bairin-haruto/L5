@@ -1,4 +1,5 @@
 <% @tweets.each do |e| %>
+  uid: <%= e.user.uid %>, password_digest: <%= e.user.password_digest %>
   <%= e.message %>
   (<%= e.user_id %>)
   <%= link_to '削除', tweet_path(e), data: { turbo_method: :delete } %>
